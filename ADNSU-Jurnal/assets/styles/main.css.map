@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,UAAU,CAAA;EACV,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,SAAS,EAAE,IAAI;CACd;;AGPD,AAAA,MAAM,CAAA;EACF,aAAa,EAAE,eAAe;CAsBjC;;AAvBD,AAGI,MAHE,CAGF,GAAG,CAAA;EACC,KAAK,EAAE,eAAe;EACtB,gBAAgB,EAAE,KAAK;CAiB1B;;AAtBL,AAOY,MAPN,CAGF,GAAG,CAGC,CAAC,CACG,GAAG,CAAA;EACC,KAAK,EAAE,KAAK;CACf;;AATb,AAWQ,MAXF,CAGF,GAAG,CAQC,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,QAAQ;CAO5B;;AArBT,AAeY,MAfN,CAGF,GAAG,CAQC,SAAS,CAIL,WAAW,CAAA;EACP,YAAY,EAAE,gBAAgB;EAC9B,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;CACjC",
+    "sources": [
+        "main.scss",
+        "_variable.scss",
+        "_common.scss",
+        "layouts/_index.scss",
+        "layouts/_footer.scss",
+        "layouts/_header.scss",
+        "pages/_index.scss",
+        "pages/_home.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
