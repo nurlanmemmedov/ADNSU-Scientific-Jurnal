@@ -6,3 +6,9 @@ align-items: center;
 justify-content: center;
 flex-wrap: wrap;
 }
+.section-padding{
+    padding-top: $section-padding;
+}
+.header-padding{
+    padding-bottom: $header-padding;
+}

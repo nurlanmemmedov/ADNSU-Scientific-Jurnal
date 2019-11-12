@@ -1,0 +1,104 @@
+main{
+    font-family: $main-font;
+#carousel{
+        .head-title{
+            h2{
+                color: $color-light-black;
+         } }
+    .jurnal-carousel{
+        width: 100%;
+        .owl-carousel{
+           .owl-stage-outer{
+               .owl-stage{
+                   .owl-item{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                       .item{
+                           width: 100%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: space-around;
+                           img{
+                             width: 300px !important;
+                           }
+                           .info{
+                               margin: 0 !important;
+                            .faq{
+                            background-color: $color-white;
+                            border-radius: $main-radius;
+                            box-shadow: $shadow-light;
+                            .faq-item{
+                                .faq-header{
+                                    border-bottom: 1px solid $color-lightest-gray;
+                                    transition: $main-transition;
+                                    h5{
+                                        width: 100%;
+                                        text-align: left;
+                                        padding: 20px 30px;
+                                        font-weight: 400;
+                                        font-size: $main-size * 0.9375;
+                                        color: $color-light-black;
+                                        transition: $main-transition;
+                                        cursor: pointer;
+                                        margin: 0 !important;
+                                    }
+                                    &:hover{
+                                        background-color: $color-lightest-gray;
+                                        padding-left: 10px;
+                                    }
+                                    }
+                                .faq-content{
+                                    max-height: 0;
+                                    transition: max-height 0.3s ease;
+                                    overflow: hidden;
+                                    .content-wrap{
+                                        padding: 30px;
+                                        padding-left: 35px;
+                                        padding-bottom: 16px;
+                                        border-bottom: 1px solid $color-lightest-gray;;
+                                    p{
+                                        font-weight: 400;
+                                        font-size: $main-size * 0.875;
+                                        color: $color-light;
+                                    }
+                                }
+                                }
+                                .faq-content.show{
+                                    transition: max-height 0.3s ease;
+                                    max-height: 220px;;
+                                }
+                               
+                            }
+                            }
+                            }
+                       }
+                   }
+               }
+           }
+           .owl-nav{
+               position: absolute;
+               top: 40%;
+               left: 0;
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               button{
+                   &:focus{
+                       outline: 0;
+                   }
+               }
+           }
+        }
+    }
+    .jurnal-information{
+        .journal-info-context{
+            font-size: $main-size;
+            color: $color-light;
+        }
+    }
+}
+}

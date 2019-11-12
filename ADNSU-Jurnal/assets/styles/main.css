@@ -14,8 +14,17 @@
       flex-wrap: wrap;
 }
 
+.section-padding {
+  padding-top: 70px;
+}
+
+.header-padding {
+  padding-bottom: 60px;
+}
+
 header {
-  border-bottom: 1px solid black;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
 }
 
 header nav {
@@ -48,5 +57,133 @@ header nav .collapse .navbar-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+main #carousel .head-title h2 {
+  color: #3B566E;
+}
+
+main #carousel .jurnal-carousel {
+  width: 100%;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+  width: 300px !important;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info {
+  margin: 0 !important;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq {
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-header {
+  border-bottom: 1px solid #F7FAFD;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-header h5 {
+  width: 100%;
+  text-align: left;
+  padding: 20px 30px;
+  font-weight: 400;
+  font-size: 1.05469rem;
+  color: #3B566E;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-header:hover {
+  background-color: #F7FAFD;
+  padding-left: 10px;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-content {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-content .content-wrap {
+  padding: 30px;
+  padding-left: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #F7FAFD;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-content .content-wrap p {
+  font-weight: 400;
+  font-size: 0.98438rem;
+  color: #6F8BA4;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-stage-outer .owl-stage .owl-item .item .info .faq .faq-item .faq-content.show {
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  max-height: 220px;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-nav {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #carousel .jurnal-carousel .owl-carousel .owl-nav button:focus {
+  outline: 0;
+}
+
+main #carousel .jurnal-information .journal-info-context {
+  font-size: 1.125rem;
+  color: #6F8BA4;
 }
 /*# sourceMappingURL=main.css.map */

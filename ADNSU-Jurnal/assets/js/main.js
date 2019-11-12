@@ -1,0 +1,33 @@
+$(document).ready(function () {
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    items: 1,
+    nav: true,
+    loop: false,
+    autoplay: false,
+    navText : ["<i class='fas fa-chevron-left fa-2x'></i>","<i class='fas fa-chevron-right fa-2x'></i>"]
+  });
+  let about_sjrr = "The journal highlights the most important scientific and research problems of prospecting, exploration and development of oil fields, including methods of geological and geophysical research, a comprehensive assessment of the oil and gas potential of territories and local objects, geological and economic zoning, reserves estimation, and forecasting of unconventional traps. Issues of managing the geological exploration industry in the new conditions, legal and financial regulation of the use of mineral resources, cooperation with foreign companies in the development of oil and gas resources are also highlighted. Official documents of the  Ministry of Fuel and Energy and the Government of Russia on these issues are published.The journal publishes information on the most important results of exploration in Russia, the CIS countries and abroad, on new oil and gas fields, their geological structure and exploration features, on the application of new methods for processing geological and geophysical surveys, their integration, on the development of the field -geophysical methods.A significant place is devoted to questions of assessing the degree of influence of the main geological and physical factors on the technological indicators of the development of oil and gas fields, the analysis of the effectiveness of various systems for maintaining and regulating reservoir pressure, the rational placement of wells, and the intensification of oil production from low-permeability, highly heterogeneous, and clay-containing reservoirs.The questions of the state and trends in the development of thermal, physico-chemical, gas, microbiological and wave methods of enhancing oil recovery both in Russia and abroad are highlighted."
+  let about_asr = "The journal publishes articles on recent advances in improving oil and gas field development systems, onshore and offshore oil and gas production techniques and technologies, methods of stimulating the formation and bottom-hole zone of wells in order to intensify oil production and increase oil recovery (injection of reservoir waters, steam carriers, various water-soluble polymers and hydrocarbon solvents, etc.), methods of oil production using horizontal wells.Measures to improve the use of the stock of wells, problems of equipment and technology for overhaul and current repair of wells, operation of wells in conditions of progressive watering are considered, methods and means of combating corrosion of oilfield equipment and the protection of environmental objects, prevention of the precipitation of salts and asphalt-tar and paraffin deposits during well operation are described, the state and prospects of the use of chemicals in the oil industry, the modern most cost-effective technical means and technologies for the collection, transport and preparation of oil, gas and water in the fields, oil gas processing at the GPP.Materials are published that highlight the state and development trends of oilfield construction, power supply for enterprises, the effectiveness of new building materials, organizational and technological features of the design and construction of oilfield facilities in difficult climatic conditions. Brief statistics on oil and gas production in foreign countries and other relevant problems of the development of the oil and gas industry abroad are provided. Along with technical and technological issues, the problems of restructuring the domestic oil and gas industry in modern conditions - a market economy, the survival of manufacturing enterprises and the state of science are revealed.The ways of increasing oil and gas production, problems of the oil business, and cooperation with foreign firms are shown.The pages of the magazine widely cover informational materials of exhibitions, conferences and scientific and technical meetings held in the industry, publish brochures and advertisements on new types of equipment and technology, as well as patents and inventions.Organizations and enterprises are offered in whole or in part separate issues of journals for publishing materials of best practices, anniversaries of firms, companies or major scientists and managers, the results of scientific developments and their introduction into production in the form of articles, abstracts, prospectuses, advertisements (possibly in color) . Negotiable prices."
+  let about_euk = "The magazine publishes materials on domestic and foreign achievements in the field of development, creation, installation, commissioning, operation and maintenance of measuring instruments, automation, telemechanization and communications, as well as their metrological support. The issues of the creation and operation of automated process control systems, modern communication systems, information-measuring systems, computer-aided design systems are highlighted. The issues of computerization of vocational training, automation of workstations based on PC, as well as the problems of mathematical modeling and software, the creation and maintenance of banks and databases are reflected.The magazine provides informational support for scientific and technical events; information on international and domestic exhibitions, conferences, seminars, and meetings in the field of automation, telemechanization, and communication is published on its pages.The materials published on the pages of the journal will provide great practical assistance to the heads of enterprises and organizations, engineering and scientific workers, production innovators in the implementation and use of automation tools and systems in the oil industry."
+  $(".journal-info-context").html(about_sjrr)
+  owl.on('changed.owl.carousel', function (e) {
+    if (e.item.index == 0) {
+      $(".journal-info-context").html(about_sjrr)
+    }else if(e.item.index == 1){
+      $(".journal-info-context").html(about_asr)
+    }else if(e.item.index == 2){
+      $(".journal-info-context").html(about_euk)
+    }
+  })
+
+   //to make the faq content appear
+   $('.faq-header').each(function (index, item) {
+    $('.faq-header').eq(index).click(() => {
+        $('.faq-content').not(':eq(' + index + ')').removeClass('show');
+        $('.faq-content').eq(index).toggleClass('show')
+        $('.faq-header').eq(index).toggleClass('collapsed')
+
+    })
+});
+})
